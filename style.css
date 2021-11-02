@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    margin: auto;
+    width: 90%;
+}
+
+.Logo{
+    width: 125px;
+    margin-top: 5px;
+}
+
+nav{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+}
+
+li{
+    list-style-type: none;
+}
+
+li:nth-child(1){
+    margin-right: 60px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
+    padding-top: 28px;
+}
+
+#autres{
+    margin-top: 50px;
+}
+
+#autres h2{
+    margin-bottom: 10px;
+}
+
+#autres p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#localisation{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#localisation .fas.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    padding: 19px;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#localisation .marseille{
+    padding: 20px;
+    border: 1px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-left: none;
+    border-right: 0;
+}
+
+#localisation .marseille::placeholder{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#localisation #rechercher{
+    border: none;
+    padding: 18px;
+    background-color: #0065FC;
+    text-decoration: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#loupe{
+    display: none;
+}
+
+#filtres{
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#filtres p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+    margin-top: 9px;
+}
+
+#filtres_radius{
+    display: flex;
+}
+
+#filtres_radius a{
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom-left-radius : 50px;
+    border-bottom-right-radius : 50px;
+    border-top-left-radius : 50px;
+    border-top-right-radius : 50px;
+    margin-right: 12px;
+    padding-right: 16px;
+    border-left: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#filtres_radius i{
+    margin-right: 8px;
+    color: #0065FC;
+    border: 1px solid #DEEBFF;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #DEEBFF;
+}
+
+
+#romantique_animaux a{
+    border: 1.5px solid rgb(204, 204, 204);
+    border-bottom-left-radius : 50px;
+    border-bottom-right-radius : 50px;
+    border-top-left-radius : 50px;
+    border-top-right-radius : 50px;
+    margin-right: 12px;
+    padding-right: 16px;
+    border-left: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fas.fa-info{
+    margin-right: 10px;
+    color: #0065FC;
+    border: solid 1px #F2F2F2;
+    padding: 6px;
+    border-radius: 100%;
+    width: 15px;
+    text-align: center;
+    font-size: 15px;
+}
