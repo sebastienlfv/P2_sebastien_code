@@ -5,8 +5,12 @@
 }
 
 header{
-    margin: auto;
+    margin-bottom: 50px;
+}
+
+.block_page{
     width: 90%;
+    margin: auto;
 }
 
 .Logo{
@@ -126,7 +130,7 @@ nav a:hover{
     border-bottom-right-radius : 50px;
     border-top-left-radius : 50px;
     border-top-right-radius : 50px;
-    margin-right: 12px;
+    margin-right: 40px;
     padding-right: 16px;
     border-left: none;
     text-decoration: none;
@@ -169,4 +173,139 @@ nav a:hover{
     width: 15px;
     text-align: center;
     font-size: 15px;
+}
+
+#contenue{
+    margin-bottom: 500px;
+    display: flex;
+}
+
+#hebergement{
+    background-color: #F2F2F2;
+    padding: 40px;
+    border-radius: 10px;
+    padding-right: 0;
+    margin-right: 50px;
+}
+
+#hebergement img{
+    width: 250px;
+}
+
+#ligne1, #ligne2{
+    display: flex;
+}
+
+#ligne2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#hebergement h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logement{
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.1);
+}
+
+.logement img{
+    object-fit: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.etoile{
+    color: #0065FC;
+    font-size: 14px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+}
+
+#grise{
+    color: #EBEBEB;
+}
+
+.logement h3, .logement_populaire h3{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.logement p, .logement_populaire p{
+    margin-left: 8px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#hebergement button{
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+#populaires{
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 40px;
+    padding-bottom: 0;
+    width: 20%;
+}
+
+.logement_populaire{
+    background-color: white;
+    height: 120px;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+#populaires h2{
+    margin-bottom: 20px;
+}
+
+.logement_populaire img{
+    float: left;
+    width: 130px;
+    object-fit: cover;
+    height: 120px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+}
+
+#stats_populaire{
+    display: flex;
+}
+
+#stats_populaire i{
+    margin-left: 95px;
+    font-size: 20px;
+}
+
+.etoile_populaire{
+    color: #0065FC;
+    font-size: 10px;
+    margin-left: 7px;
+    margin-top: 40px;
+}
+
+.etoile_populaire1{
+    color: #0065FC;
+    font-size: 10px;
+    margin-left: 7px;
+    margin-top: 25px;
 }
