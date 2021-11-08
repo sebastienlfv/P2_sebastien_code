@@ -138,6 +138,22 @@ nav a:hover{
     font-weight: bold;
 }
 
+#economique_familial a{
+    border: 1.5px solid rgb(204, 204, 204);
+    border-bottom-left-radius : 50px;
+    border-bottom-right-radius : 50px;
+    border-top-left-radius : 50px;
+    border-top-right-radius : 50px;
+    margin-right: 12px;
+    padding-right: 16px;
+    border-left: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #filtres_radius i{
     margin-right: 8px;
     color: #0065FC;
@@ -424,11 +440,210 @@ footer h2{
 }
 
 #assistance p{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px){
+    .block_page{
+        width: 100%;
+    }
+
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .Logo{
+        width: 100px;
+        margin: auto;
+    }
+
+    ul{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .active,
+    nav a:hover{
+    border-top: none;
+    border-bottom: solid 2px #0065FC;
+    padding-bottom: 15px;
+    }
+
+    nav a{
+        border-bottom: solid 2px #F2F2F2;
+        padding-bottom: 15px;
+    }
+
+    #autres h2{
+        margin-bottom: 20px;
+    }
+
+    #autres p{
+        margin-bottom: 35px;
+    }
+
+    #localisation{
+        justify-content: center;
+    }
+
+    #rechercher{
+        display: none;
+    }
+
+    #loupe{
+        display: flex;
+        display: flex;
+        color: white;
+        background-color: #0065FC;
+        border: 0.5px solid #0065FC;
+        border-radius: 20px;
+        padding: 17px;
+        font-size: 20px;
+        margin-left: -17px;
+    }
+
+    #filtres{
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #filtres p{
+        margin-bottom: 15px;
+    }
+
+    #filtres_radius{
+        flex-direction: column;
+    }
+
+    #filtres_radius a{
+        margin-bottom: 15px;
+    }
+
+    #economique_familial{
+        margin-bottom: 15px;
+    }
+
+    #romantique_animaux{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #romantique_animaux a{
+        margin-right: 1px;
+        padding: 0;
+    }
+
+    .info{
+        display: flex;
+    }
+
+    .fas.fa-info{
+        margin-right: 10px;
+        color: #0065FC;
+        border: solid 1px #F2F2F2;
+        padding: 11px;
+        border-radius: 100%;
+        width: 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #contenue{
+        flex-direction: column-reverse;
+    }
+
+    #populaires{
+        border-radius: 0;
+        width: auto;
+        padding: 20px;
+    }
+
+    #stats_populaire{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .etoile_populaire{
+        margin-top: 50px;
+    }
+
+    .etoile_populaire1{
+        margin-top: 35px;
+    }
+
+    #hebergement{
+        width: auto;
+        background: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #ligne1, #ligne2{
+        flex-direction: column;
+    }
+
+    #hebergement h2{
+        margin-top: 20px;
+    }
+
+    .logement{
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #activite_marseille{
+        padding: 20px;
+    }
+
+    #contenue_activite{
+        flex-direction: column;
+    }
+
+    .activite1, .activite4{
+        width: auto;
+        height: auto;
+    }
+
+    .activite1 img, .activite2 img, .activite3 img, .activite4 img, .activite5 img, .activite6{
+        height: 150px;
+    }
+
+    .activite2, .activite5{
+        margin-bottom: 10px;
+    }
+
+    .displayblock{
+        width: auto;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    #footer_apropos{
+        flex-direction: column;
+    }
+
+    footer h2{
+        margin-bottom: 15px;
+    }
+
+    #a_propos, #nos_herbergement, #assistance{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #a_propos p, #nos_herbergement p, #assistance p{
+        margin-bottom: 10px;
+    }
 
 }
 
