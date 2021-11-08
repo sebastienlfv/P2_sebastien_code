@@ -9,7 +9,7 @@ header{
 }
 
 .block_page{
-    width: 90%;
+    width: 1300px;
     margin: auto;
 }
 
@@ -20,13 +20,12 @@ header{
 
 nav{
     display: flex;
+    justify-content: space-between;
 }
 
 ul{
     display: flex;
-    position: absolute;
-    right: 5%;
-    top: 30px;
+    margin-top: 30px;
 }
 
 li{
@@ -42,6 +41,7 @@ nav a{
     color: black;
 }
 
+.active,
 nav a:hover{
     border-top: solid 2px #0065FC;
     color: #0065FC;
@@ -181,15 +181,12 @@ nav a:hover{
 }
 
 #hebergement{
+    width:65%;
     background-color: #F2F2F2;
     padding: 40px;
     border-radius: 10px;
     padding-right: 0;
     margin-right: 50px;
-}
-
-#hebergement img{
-    width: 250px;
 }
 
 #ligne1, #ligne2{
@@ -212,6 +209,7 @@ span{
 }
 
 .logement{
+    width: 30%;
     margin-right: 30px;
     background-color: white;
     border-radius: 10px;
@@ -233,7 +231,7 @@ span{
     margin-bottom: 3px;
 }
 
-#grise{
+.grise{
     color: #EBEBEB;
 }
 
@@ -242,6 +240,10 @@ span{
     font-size: 15px;
     margin-left: 8px;
     margin-bottom: 5px;
+}
+
+.logement_populaire h3{
+    margin-top: 5px;
 }
 
 .logement p, .logement_populaire p{
@@ -262,7 +264,7 @@ span{
     border-radius: 10px;
     padding: 40px;
     padding-bottom: 0;
-    width: 20%;
+    width: 30%;
 }
 
 .logement_populaire{
@@ -289,33 +291,31 @@ span{
 
 #stats_populaire{
     display: flex;
+    justify-content: space-between;
 }
 
 #stats_populaire i{
-    margin-left: 95px;
     font-size: 20px;
 }
 
 .etoile_populaire{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 7px;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 
 .etoile_populaire1{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 7px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .activite1, .activite2, .activite3, .activite4, .activite5, .activite6{
-    width: 350px;
     border-radius: 10px;
     box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.1);
     margin-bottom: 10px;
-    margin-right: 100px;
 }
 
 .displayblock{
@@ -323,13 +323,18 @@ span{
 }
 
 .activite1 img, .activite2 img, .activite3 img, .activite4 img, .activite5 img, .activite6 img{
-    width: 350px;
+    width: 100%;
     border-radius: 10px;
     border-radius: 10px 10px 0px 0px;
 }
 
+.activite1, .activite4, .displayblock{
+    width: 20%;
+}
+
 #contenue_activite{
     display: flex;
+    justify-content: space-between;
 }
 
 .activite2, .activite5{
@@ -379,6 +384,10 @@ span{
     margin-bottom: 20px;
 }
 
+#footer_apropos{
+    display: flex;
+}
+
 footer{
     padding-top: 30px;
     padding-left: 80px;
@@ -396,7 +405,7 @@ footer h2{
 }
 
 #a_propos{
-    margin-left: 20px;
+    margin-left: 220px;
     margin-right: 400px;
 }
 
@@ -418,3 +427,8 @@ footer h2{
     font-size: 16px;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 768px){
+
+}
+
