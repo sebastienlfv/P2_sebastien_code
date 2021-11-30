@@ -113,7 +113,7 @@ nav a:hover{
     margin-bottom: 30px;
 }
 
-#filtres p{
+#filtres h2{
     font-size: 20px;
     font-weight: bold;
     margin-right: 40px;
@@ -125,6 +125,7 @@ nav a:hover{
 }
 
 #filtres_radius a{
+    display: flex;
     border: 1px solid rgb(204, 204, 204);
     border-bottom-left-radius : 50px;
     border-bottom-right-radius : 50px;
@@ -136,48 +137,21 @@ nav a:hover{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    align-items: center;
 }
 
-#economique_familial a{
-    border: 1.5px solid rgb(204, 204, 204);
-    border-bottom-left-radius : 50px;
-    border-bottom-right-radius : 50px;
-    border-top-left-radius : 50px;
-    border-top-right-radius : 50px;
-    margin-right: 12px;
-    padding-right: 16px;
-    border-left: none;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 #filtres_radius i{
     margin-right: 8px;
     color: #0065FC;
     border: 1px solid #DEEBFF;
     border-radius: 100%;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DEEBFF;
-}
-
-
-#romantique_animaux a{
-    border: 1.5px solid rgb(204, 204, 204);
-    border-bottom-left-radius : 50px;
-    border-bottom-right-radius : 50px;
-    border-top-left-radius : 50px;
-    border-top-right-radius : 50px;
-    margin-right: 12px;
-    padding-right: 16px;
-    border-left: none;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .fas.fa-info{
@@ -344,7 +318,7 @@ span{
     border-radius: 10px 10px 0px 0px;
 }
 
-.activite1, .activite4, .displayblock{
+.displayblock{
     width: 23%;
 }
 
@@ -400,23 +374,14 @@ span{
     margin-bottom: 20px;
 }
 
-#footer_apropos{
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-    width: 1300px;
-    justify-content: space-around;
-}
-
 footer{
     padding-top: 30px;
-    padding-left: 80px;
     padding-bottom: 30px;
     background-color: #EBEBEB;
     display: flex;
     margin-top: 50px;
+    justify-content: space-around;
 }
-
 
 footer h2{
     font-weight: bold;
@@ -424,18 +389,7 @@ footer h2{
     margin-bottom: 20px;
 }
 
-
-#a_propos p{
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-#nos_herbergement p{
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-#assistance p{
+footer div p{
     font-size: 14px;
     margin-bottom: 15px;
 }
@@ -525,35 +479,21 @@ footer h2{
     }
 
     #filtres{
-        flex-direction: column;
         text-align: left;
         margin-bottom: 20px;
     }
 
-    #filtres p{
+    #filtres h2{
         margin-bottom: 15px;
     }
 
     #filtres_radius{
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #filtres_radius a{
         margin-bottom: 15px;
-    }
-
-    #economique_familial{
-        margin-bottom: 15px;
-    }
-
-    #romantique_animaux{
-        display: flex;
-        flex-direction: column;    
-    }
-
-    #romantique_animaux a:nth-child(1), #romantique_animaux a:nth-child(2){
-        padding: 0;
-        padding-right: 15px;
         width: fit-content;
     }
 
@@ -621,7 +561,7 @@ footer h2{
     }
 
     #contenue_activite{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .activite1, .activite4{
@@ -630,7 +570,7 @@ footer h2{
     }
 
     #contenue_activite img{
-        height: 150px;
+        /* height: 150px; */
     }
 
     .activite2, .activite5{
@@ -667,7 +607,7 @@ footer h2{
 
 /* TABLETTE */
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 376px) and (max-width: 768px){
     .block_page{
         width: 100%;
     }
@@ -753,7 +693,7 @@ footer h2{
         margin-bottom: 20px;
     }
 
-    #filtres p{
+    #filtres {
         margin-bottom: 15px;
     }
 
@@ -825,8 +765,12 @@ footer h2{
         margin: 0;
     }
 
+    /* #ligne1_ligne2{
+        display: flex;
+    } */
+
     #ligne1, #ligne2{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #hebergement h2{
@@ -837,6 +781,7 @@ footer h2{
         width: auto;
         margin-right: 0;
         margin-bottom: 15px;
+        width: 100%;
     }
 
     #activite_marseille{
@@ -844,7 +789,8 @@ footer h2{
     }
 
     #contenue_activite{
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .activite1, .activite4{
@@ -852,16 +798,12 @@ footer h2{
         height: auto;
     }
 
-    #contenue_activite img{
-        height: 150px;
-    }
-
     .activite2, .activite5{
         margin-bottom: 10px;
     }
 
     .displayblock{
-        width: auto;
+        width: 48%;
     }
 
     footer{
@@ -971,12 +913,11 @@ footer h2{
         margin-bottom: 20px;
     }
 
-    #filtres p{
+    #filtres h2{
         margin-bottom: 15px;
     }
 
     #filtres_radius{
-        flex-direction: column;
     }
 
     #filtres_radius a{
@@ -1084,6 +1025,7 @@ footer h2{
 
     footer{
         padding: 20px;
+        flex-direction: column;
     }
 
     #footer_apropos{
