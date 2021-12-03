@@ -172,6 +172,7 @@ nav a:hover{
 
 #hebergement{
     width:70%;
+    height: 70%;
     background-color: #F2F2F2;
     padding: 40px;
     border-radius: 10px;
@@ -179,13 +180,9 @@ nav a:hover{
     margin-right: 50px;
 }
 
-#ligne1, #ligne2{
+.container-hebergement{
     display: flex;
-}
-
-#ligne2{
-    margin-top: 15px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 span{
@@ -199,11 +196,12 @@ span{
 }
 
 .logement{
-    width: 30%;
+    width: 28%;
     margin-right: 30px;
     background-color: white;
     border-radius: 10px;
     padding: 3px;
+    margin-bottom: 20px;
     box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.1);
 }
 
@@ -375,12 +373,15 @@ span{
 }
 
 footer{
+    display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #EBEBEB;
-    display: flex;
     margin-top: 50px;
-    justify-content: space-around;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
 footer h2{
@@ -389,9 +390,22 @@ footer h2{
     margin-bottom: 20px;
 }
 
-footer div p{
-    font-size: 14px;
-    margin-bottom: 15px;
+footer .container-footer{
+    display: flex;
+    width: 1400px;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer section{
+    display: block;
+    width: 33%;
+    text-align: left;
+}
+
+footer section p{
+    margin-bottom: 10px;
 }
 
 /* GRANDE TABLETTE */
@@ -522,17 +536,26 @@ footer div p{
         padding: 20px;
     }
 
+    .logement_populaire{
+        height: 150px;
+    }
+
+    .logement_populaire img{
+        width: 275px;
+        height: 150px;
+    }
+
     #stats_populaire{
         margin-top: 20px;
         margin-bottom: 5px;
     }
 
     .etoile_populaire{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .etoile_populaire1{
-        margin-top: 35px;
+        margin-top: 80px;
     }
 
     #hebergement{
@@ -788,6 +811,10 @@ footer div p{
         padding: 20px;
     }
 
+    #contenue_activite h3{
+        padding-bottom: 10px;
+    }
+
     #contenue_activite{
         display: flex;
         flex-wrap: wrap;
@@ -1023,28 +1050,13 @@ footer div p{
         width: auto;
     }
 
-    footer{
-        padding: 20px;
+    footer .container-footer{
         flex-direction: column;
     }
 
-    #footer_apropos{
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    footer h2{
-        margin-bottom: 15px;
-    }
-
-    #a_propos, #nos_herbergement, #assistance{
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    #a_propos p, #nos_herbergement p, #assistance p{
-        margin-bottom: 10px;
+    footer section{
+        width: 100%;
+        margin-bottom: 25px;
     }
 
 }
