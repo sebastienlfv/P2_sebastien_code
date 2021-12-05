@@ -555,7 +555,7 @@ footer section p{
     }
 
     .etoile_populaire1{
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 
     #hebergement{
@@ -574,7 +574,7 @@ footer section p{
     }
 
     .logement{
-        width: auto;
+        width: 48%;
         margin-right: 0;
         margin-bottom: 15px;
     }
