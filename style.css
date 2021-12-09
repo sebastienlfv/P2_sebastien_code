@@ -140,6 +140,11 @@ nav a:hover{
     align-items: center;
 }
 
+#filtres_radius a:hover{
+    color: white;
+    background-color: #0065FC;
+    transition: 0.4s;
+}
 
 #filtres_radius i{
     margin-right: 8px;
@@ -530,6 +535,10 @@ footer section p{
         flex-direction: column-reverse;
     }
 
+    .container-hebergement{
+        justify-content: space-between;
+    }
+
     #populaires{
         border-radius: 0;
         width: auto;
@@ -584,12 +593,21 @@ footer section p{
     }
 
     #contenue_activite{
-        /* flex-direction: column; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .displayblock .activite1 h3, .displayblock .activite4 h3{
+        padding-bottom: 10px;
     }
 
     .activite1, .activite4{
         width: auto;
         height: auto;
+    }
+
+    .activite6, .activite3{
+        margin-top: 33px;
     }
 
     #contenue_activite img{
@@ -601,7 +619,7 @@ footer section p{
     }
 
     .displayblock{
-        width: auto;
+        width: 48%;
     }
 
     footer{
@@ -721,11 +739,12 @@ footer section p{
     }
 
     #filtres_radius{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #filtres_radius a{
         margin-bottom: 15px;
+        margin-right: 17px;
     }
 
     #economique_familial{
@@ -781,6 +800,10 @@ footer section p{
         margin-top: 35px;
     }
 
+    .container-hebergement {
+        justify-content: space-between;
+    }
+
     #hebergement{
         width: auto;
         background: none;
@@ -804,15 +827,11 @@ footer section p{
         width: auto;
         margin-right: 0;
         margin-bottom: 15px;
-        width: 100%;
+        width: 47%;
     }
 
     #activite_marseille{
         padding: 20px;
-    }
-
-    #contenue_activite h3{
-        padding-bottom: 10px;
     }
 
     #contenue_activite{
@@ -924,7 +943,6 @@ footer section p{
 
     #loupe{
         display: flex;
-        display: flex;
         color: white;
         background-color: #0065FC;
         border: 0.5px solid #0065FC;
@@ -942,9 +960,6 @@ footer section p{
 
     #filtres h2{
         margin-bottom: 15px;
-    }
-
-    #filtres_radius{
     }
 
     #filtres_radius a{
@@ -985,6 +1000,15 @@ footer section p{
         flex-direction: column-reverse;
     }
 
+    .logement_populaire{
+        height: 134px;
+    }
+
+    .logement_populaire img{
+        width: 140px;
+        height: 134px;
+    }
+
     #populaires{
         border-radius: 0;
         width: auto;
@@ -997,11 +1021,11 @@ footer section p{
     }
 
     .etoile_populaire{
-        margin-top: 50px;
+        margin-top: 65px;
     }
 
     .etoile_populaire1{
-        margin-top: 35px;
+        margin-top: 49px;
     }
 
     #hebergement{
@@ -1020,7 +1044,7 @@ footer section p{
     }
 
     .logement{
-        width: auto;
+        width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
     }
@@ -1044,6 +1068,10 @@ footer section p{
 
     .activite2, .activite5{
         margin-bottom: 10px;
+    }
+
+    .activite6, .activite3{
+        margin-top: 0;
     }
 
     .displayblock{
