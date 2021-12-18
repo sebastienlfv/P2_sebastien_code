@@ -313,16 +313,13 @@ span{
 
 .displayblock{
     display: block;
+    width: 23%;
 }
 
 #contenue_activite img{
     width: 100%;
     border-radius: 10px;
     border-radius: 10px 10px 0px 0px;
-}
-
-.displayblock{
-    width: 23%;
 }
 
 #contenue_activite{
@@ -387,6 +384,7 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 footer h2{
@@ -487,7 +485,6 @@ footer section p{
 
     #loupe{
         display: flex;
-        display: flex;
         color: white;
         background-color: #0065FC;
         border: 0.5px solid #0065FC;
@@ -564,7 +561,7 @@ footer section p{
     }
 
     .etoile_populaire1{
-        /* margin-top: 80px; */
+        margin-top: 80px;
     }
 
     #hebergement{
@@ -717,7 +714,6 @@ footer section p{
     }
 
     #loupe{
-        display: flex;
         display: flex;
         color: white;
         background-color: #0065FC;
@@ -963,6 +959,7 @@ footer section p{
     }
 
     #filtres_radius a{
+        margin-right: 10px;
         margin-bottom: 15px;
     }
 
@@ -1076,6 +1073,10 @@ footer section p{
 
     .displayblock{
         width: auto;
+    }
+
+    footer{
+        margin-top: 20px;
     }
 
     footer .container-footer{
